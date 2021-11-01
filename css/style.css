@@ -1,0 +1,208 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.woff') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff2') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1 {
+	font-family: Gilroy;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+.block {
+	width: auto;
+}
+.wrapper {
+	min-height: 100%;
+	width: 1200px;
+	margin: 0 auto;
+}
+/* p {
+	background-color: rgb(90, 56, 56);
+	padding: 15px;
+} */
+/* 
+Блок
+ Независимый объект! 
+ Не влияет на окружение! 
+ */
+
+/* 
+ В CSS обращаемся к БЭМ блоку 
+ селекторам первого уровня
+ */
+
+/* Верно(независимый) */
+/* .who-we-are {
+	background-color: rgb(53, 95, 81);
+	color: #fff; */
+/* Можно */
+/* padding: 15px; */
+/* Нельзя */
+/* margin: 15px; */
+/* }
+.who-we-are__title {
+	margin: 0 0 15px 0; */
+/* } */
+/* Не верно(завимость) */
+/* .item .who-we-are {
+	background-color: aquamarine;
+}
+.who-we-are_purple {
+	background-color: purple;
+}
+.who-we-are__title {
+	font-size: 20px;
+	margin: 0 0 15px 0;
+}
+.who-we-are__title_margin-font {
+	margin: 0 0 30px 0;
+	font-size: 50px;
+}
+.main-page__who-we-are {
+	margin: 0 0 30px 0;
+}
+.contacts__who-we-are {
+	margin: 0 0 100px 0;
+}
+.who-we-are__header {
+	margin: 0 0 30px 0;
+}
+.promice__header {
+	margin: 0 0 68px 0;
+}
+.block {
+	border: 1px solid #000;
+	padding: 15px;
+	background-color: brown;
+}
+.block_title {
+	font-size: 20px;
+	margin: 0 0 15px 0;
+} */
+h1 {
+	font-size: 50px;
+	color: rgb(131, 78, 78);
+	font-weight: 900;
+	margin: 0 0 150px 0;
+}
+.block-dog {
+	background: url(../img/BG\ Image.jpg) 0 0 no-repeat;
+	max-width: 1440px;
+}
+.item_info {
+	position: relative;
+}
+.our_impact {
+	width: 411px;
+	display: inline-block;
+	margin: 140px 0 79px 0;
+}
+.our-impact__title {
+	background: url(../img/Overline\ Mark.svg) left no-repeat;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 24px;
+	text-shadow: 0 4px 4px #000;
+	color: #fff;
+	letter-spacing: 2.5;
+	text-transform: uppercase;
+	padding: 0 0 0 32px;
+}
+.our-impact__subtitle {
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 42px;
+	color: #fff;
+	width: 411px;
+	padding-top: 32px;
+}
+.item-dog__image {
+	display: inline-block;
+	border-radius: 40px;
+	overflow: hidden;
+	max-width: 498px;
+	position: absolute;
+	top: -50px;
+	right: 50px;
+}
+
+.info-item {
+	max-width: 260px;
+	display: inline-block;
+	margin: 0 94px 212px 0;
+}
+
+.info-item__img {
+	display: inline-block;
+	width: 76px;
+	vertical-align: top;
+	margin: 0px 11px 0px 0px;
+}
+.info-item__body {
+	display: inline-block;
+	vertical-align: top;
+}
+.info-item__numbers {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 900;
+	color: #fff;
+}
+.info-item__text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #5d62b5;
+}
